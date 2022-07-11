@@ -1,5 +1,5 @@
 # React Shop Portfolio Project
-[Demo](https://vadimfront.github.io/react-sho)
+[Demo](https://vadimfront.github.io/react-shop)
 
 
 
