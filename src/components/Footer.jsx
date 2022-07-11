@@ -4,8 +4,8 @@ export function Footer() {
     </div>
     <div className="footer-copyright">
       <div className="container">
-      © 2014 Copyright Text
-      <a className="grey-text text-lighten-4 right" href="#!">More Links</a>
+      © {new Date().getFullYear()} Copyright Text
+      <a className="grey-text text-lighten-4 right" href="https://vadimfront.github.io/react-shop/" target="_blank" rel="noreferrer">More Links</a>
       </div>
     </div>
   </footer>
