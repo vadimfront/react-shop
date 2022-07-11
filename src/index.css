@@ -1,13 +1,95 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+
+.content {
+  min-height: calc(100vh - 70px - 64px);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.goods {
+  grid-gap: 1rem;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+  margin: 25px 0;
+}
+
+.goods .card  .card-action {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.cart {
+  position: fixed;
+  top: 90px;
+  right: 0;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.cart .material-icons {
+  display: block;
+  padding: 10px;
+  background-color: #132476;
+  color: #ffff;
+}
+
+.cart .cart-quantity {
+  position: absolute;
+  bottom: 15px;
+  color: #fff;
+  right: 2px;
+  font-size: 10px;  
+}
+
+.cart-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50rem;
+  max-width: 95%;
+  z-index: 11;
+  animation: show 500ms ease-in-out;
+}
+
+.modal-close {
+  position: absolute;
+  top: 22px;
+  right: 9px;
+  z-index: 12;
+  cursor: pointer;
+}
+
+.modal-close > i {
+  color: #fff;
+  font-size: 15px;
+}
+
+.basket-quantity {
+  cursor: pointer;
+  vertical-align: middle;
+  color: #26a69a;
+}
+
+.basket-delete {
+  cursor: pointer;
+}
+
+div#toast-container {
+  min-width: auto;
+  top: 134px;
+  right: 0;
+  margin: 0;
+}
+
+@keyframes show {
+  from {
+    top: 70%;
+    opacity: 0;
+  }
+  to {
+    top: 50%;
+    opacity: 1;
+  }
 }
